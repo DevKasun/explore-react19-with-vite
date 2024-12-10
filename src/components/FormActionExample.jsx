@@ -16,8 +16,12 @@ function FormActionExample() {
   );
 
   return (
-    <div className="flex flex-col gap-4">
-      <form action={formActionFunc} className="flex flex-col gap-4 min-w-72">
+    <div className="w-full flex flex-col items-center gap-4 text-center">
+      <h3 className="text-xl"> --- Client Side --- </h3>
+      <form
+        action={formActionFunc}
+        className="flex flex-col gap-4 max-w-72 w-full"
+      >
         <input
           type="email"
           name="email"
